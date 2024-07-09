@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Hero Section Styles */
+.hero-container {
+  width: 100%;
+  padding: 4rem 1rem;
+  color: #fff;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  /* margin: 0 auto; */
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  /* padding: 1rem; */
+}
+
+.text-section {
+  flex: 1;
+  padding-right: 3rem;
+}
+
+.text-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.text-description {
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+
+.text-appointment-btn {
+  padding: 1rem 2rem;
+  color: #fff;
+  background-color: #ff4081;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 64, 129, 0.3);
+}
+
+.text-appointment-btn:hover {
+  background-color: #e50065;
+  transform: scale(1.05);
+}
+
+.image-section {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* .hero-image:hover {
+  transform: scale(1.05);
+} */
+
+/* Scroll Up Button */
+.scroll-up {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #ff4081;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 64, 129, 0.3);
+}
+
+.scroll-up:hover {
+  background-color: #e50065;
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-section {
+    padding-right: 0;
+  }
+
+  .text-title {
+    font-size: 2.5rem;
+  }
+
+  .text-description {
+    font-size: 1.25rem;
+  }
+
+  .text-appointment-btn {
+    font-size: 1.125rem;
+  }
+}
